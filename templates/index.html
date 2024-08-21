@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>covid future prediction</title>
+      
+    </head>
+    <body>
+            <h1 class="heading1">covid 19 future prediction</h1><br><br>
+
+            <form method='POST' action="/predict">
+
+                <label>Enter depth:</label><br>
+                    <input type='text' name='depth' /><br>
+                <label>Enter deaths:</label><br>
+                <select name="deaths">
+                    <option value="0">100-200</option>
+                    <option value="1">200-300</option>
+                    <option value="2">300-400</option>
+                    <option value="3">400-500</option>
+                </select><br><br>
+                <label>Enter recovered:</label><br>
+                <select name="recovered">
+                    <option value="0">50</option>
+                    <option value="1">100</option>
+                    <option value="2">150</option>
+                    <option value="3">200</option>
+                </select><br><br>
+                <label>Enter Value:</label><br>
+                <input type='text' name='value' /><br><br>
+                <button type="submit" value='predict'>Submit</button>
+            </form>
+
+            <h1 class="heading2">covid(1)</h1>
+            <p>covid  19 future prediction:{{prediction}}</p>
+    </body>
+</html>
